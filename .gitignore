@@ -1,4 +1,6 @@
 venv/
 __pycache__/
-*.db
+models/__pycache__/
+data/starcuak.db
 data/outputs/*
+.DS_Store
