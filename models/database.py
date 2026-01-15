@@ -25,13 +25,13 @@ class StarcuakDB:
         except sqlite3.Error as e:
             print(f"Error de base de datos: {e}")
 
-    def insertar_resena(self, producto, comentario, sentimiento, confianza):
+    def insertar_resena(self, producto, comentario, sentimiento, confianza, fecha=None):
         """Realiza operaciones DML de inserción."""
         try:
             with sqlite3.connect(self.db_path) as conn:
                 cursor = conn.cursor()
-                query = "INSERT INTO Resenas (producto, comentario, sentimiento, confianza) VALUES (?, ?, ?, ?)"
-                cursor.execute(query, (producto, comentario, sentimiento, confianza))
+                query = "INSERT INTO Resenas (producto, comentario, sentimiento, confianza, fecha) VALUES (?, ?, ?, ?, ?)"
+                cursor.execute(query, (producto, comentario, sentimiento, confianza, fecha))
                 conn.commit()
         except sqlite3.Error as e:
             raise Exception(f"Fallo en la persistencia DML: {e}")

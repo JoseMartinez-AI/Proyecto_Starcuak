@@ -1,5 +1,7 @@
 import streamlit as st
 import matplotlib.pyplot as plt
+import pandas as pd
+from datetime import datetime
 from models.database import StarcuakDB
 from models.ia_model import AnalizadorIA
 from models.file_manager import FileManager
@@ -28,11 +30,15 @@ menu = st.sidebar.selectbox("Módulo", ["Nueva Reseña", "Carga CSV", "Dashboard
 
 if menu == "Nueva Reseña":
     with st.form("starcuak_form"):
-        prod = st.selectbox("Café/Acompañante", ["Espresso", "Americano", "Latte", "Capuccino"])
+        prod = st.selectbox(
+            "Café/Acompañante", ["Espresso", "Americano", "Latte", "Capuccino"]
+        )
         txt = st.text_area("Opinión del cliente")
         if st.form_submit_button("Analizar"):
             label, score = ia.analizar(txt)
-            db.insertar_resena(prod, txt, label, score)
+
+            ahora = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            db.insertar_resena(prod, txt, label, score, ahora)
             fm.registrar_log(f"Análisis manual: {prod} -> {label}")
             st.success(f"Sentimiento: {label} | Confianza: {score:.2f}")
 
@@ -41,16 +47,24 @@ elif menu == "Carga CSV":
     archivo = st.file_uploader("Subir CSV de reseñas", type=["csv"])
     if archivo:
         df = fm.leer_csv(archivo)
-        # Normaliza columnas (quita espacios y pasa a minúsculas)
         df.columns = df.columns.str.strip().str.lower()
-        
+
         if st.button("Procesar Todo"):
             for _, row in df.iterrows():
-                l, s = ia.analizar(row['comentario'])
-                db.insertar_resena(row.get('producto', 'Café'), row['comentario'], l, s)
-            fm.registrar_log("Carga masiva desde CSV procesada.")
+                label, score = ia.analizar(row["comentario"])
+
+                f = row.get("fecha")
+                if pd.isna(f):
+                    f = None
+
+                db.insertar_resena(
+                    row.get("producto", "Café"), row["comentario"], label, score, f
+                )
+
+            fm.registrar_log(f"Carga masiva: {len(df)} registros procesados desde CSV.")
+
             fm.guardar_binario(df.to_dict())
-            st.success("¡Datos procesados y persistidos!")
+            st.success(f"¡{len(df)} registros procesados y persistidos!")
 
 elif menu == "Dashboard Pro":
     df_data = db.obtener_datos()
@@ -59,7 +73,7 @@ elif menu == "Dashboard Pro":
 
         # Gráfico de pastel
         fig, ax = plt.subplots()
-        df_data['sentimiento'].value_counts().plot(kind='pie', autopct='%1.1f%%', ax=ax)
+        df_data["sentimiento"].value_counts().plot(kind="pie", autopct="%1.1f%%", ax=ax)
         st.pyplot(fig)
         st.write("Registros en la Base de Datos:")
         st.dataframe(df_data, hide_index=True, use_container_width=True)
