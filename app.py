@@ -37,6 +37,7 @@ if menu == "Nueva Reseña":
             st.success(f"Sentimiento: {label} | Confianza: {score:.2f}")
 
 elif menu == "Carga CSV":
+    st.subheader("📁 Procesamiento de Archivos")
     archivo = st.file_uploader("Subir CSV de reseñas", type=["csv"])
     if archivo:
         df = fm.leer_csv(archivo)
@@ -47,6 +48,7 @@ elif menu == "Carga CSV":
             for _, row in df.iterrows():
                 l, s = ia.analizar(row['comentario'])
                 db.insertar_resena(row.get('producto', 'Café'), row['comentario'], l, s)
+            fm.registrar_log("Carga masiva desde CSV procesada.")
             fm.guardar_binario(df.to_dict())
             st.success("¡Datos procesados y persistidos!")
 
