@@ -21,7 +21,6 @@ if st.sidebar.button("🗑️ Limpiar Base de Datos"):
         db.limpiar_datos()
         fm.registrar_log("Base de datos limpiada por el usuario.")
         st.sidebar.success("¡Datos eliminados correctamente!")
-        # Forzar recarga para que el dashboard se actualice
         st.rerun()
     except Exception as e:
         st.sidebar.error(f"Error: {e}")
@@ -37,10 +36,12 @@ if menu == "Nueva Reseña":
         if st.form_submit_button("Analizar"):
             label, score = ia.analizar(txt)
 
-            ahora = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            db.insertar_resena(prod, txt, label, score, ahora)
+            current_date = datetime.now().strftime("%d/%m/%Y %H:%M")
+            db.insertar_resena(prod, txt, label, score, current_date)
             fm.registrar_log(f"Análisis manual: {prod} -> {label}")
-            st.success(f"Sentimiento: {label} | Confianza: {score:.2f}")
+            st.success(
+                f"Sentimiento: {label} | Nivel de Confianza del Modelo: {score:.2f}"
+            )
 
 elif menu == "Carga CSV":
     st.subheader("📁 Procesamiento de Archivos")
@@ -49,16 +50,29 @@ elif menu == "Carga CSV":
         df = fm.leer_csv(archivo)
         df.columns = df.columns.str.strip().str.lower()
 
+        if "producto" in df.columns:
+            df["producto"] = df["producto"].astype(str).str.strip()
+        if "comentario" in df.columns:
+            df["comentario"] = df["comentario"].astype(str).str.strip()
+        if "fecha" in df.columns:
+            df["fecha"] = pd.to_datetime(df["fecha"], dayfirst=True, errors="coerce")
+
         if st.button("Procesar Todo"):
             for _, row in df.iterrows():
                 label, score = ia.analizar(row["comentario"])
 
-                f = row.get("fecha")
-                if pd.isna(f):
-                    f = None
+                f_original = row.get("fecha")
+                if pd.notna(f_original):
+                    f_final = f_original.strftime("%d/%m/%Y %H:%M")
+                else:
+                    f_final = None
 
                 db.insertar_resena(
-                    row.get("producto", "Café"), row["comentario"], label, score, f
+                    row.get("producto", "Café"),
+                    row["comentario"],
+                    label,
+                    score,
+                    f_final,
                 )
 
             fm.registrar_log(f"Carga masiva: {len(df)} registros procesados desde CSV.")
