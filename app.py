@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from datetime import datetime
 
-# Importación simplificada gracias al __init__.py
 from models import StarcuakDB, AnalizadorIA, FileManager
 
 # Instancias
@@ -17,46 +16,60 @@ st.set_page_config(page_title="Starcuak Admin Pro", page_icon="☕", layout="wid
 if "modulo_seleccionado" not in st.session_state:
     st.session_state.modulo_seleccionado = "Nueva Reseña"
 
+# Inicializa el contador para resetear el cargador de archivos
+if "uploader_key" not in st.session_state:
+    st.session_state.uploader_key = 0
+
 # --- BARRA LATERAL ---
 st.sidebar.title("☕ Starcuak Panel")
 
+# -- MENÚ DE NAVEGACIÓN ---
+opciones = ["Nueva Reseña", "Carga CSV", "Base de Datos", "Dashboard Pro"]
+indice_actual = opciones.index(st.session_state.modulo_seleccionado)
 menu = st.sidebar.selectbox(
-    "Módulo",
-    ["Nueva Reseña", "Carga CSV", "Base de Datos", "Dashboard Pro"],
-    index=["Nueva Reseña", "Carga CSV", "Base de Datos", "Dashboard Pro"].index(
-        st.session_state.modulo_seleccionado
-    ),
+    "Módulo", opciones, index=indice_actual, key="menu_seleccion"
 )
 st.session_state.modulo_seleccionado = menu
 
 # --- MÓDULO: NUEVA RESEÑA ---
 if menu == "Nueva Reseña":
     st.header("📝 Nueva Reseña Manual")
-    with st.form("form_manual"):
-        prod = st.selectbox("Café", ["Espresso", "Americano", "Latte", "Capuccino"])
+    with st.form("form_manual", clear_on_submit=True):
+        prod = st.selectbox(
+            "Café", ["Espresso", "Americano", "Latte", "Capuccino"]
+        )
         txt = st.text_area("Comentario", placeholder="Escriba el comentario aquí...")
+
         if st.form_submit_button("Analizar"):
             if txt.strip():
                 label, score = ia.analizar(txt)
                 current_date = datetime.now().strftime("%d/%m/%Y %H:%M")
                 db.insertar_resena(prod, txt, label, score, current_date)
                 fm.registrar_log(f"Analisis Manual: {prod} -> {label}")
-                st.success(f"✅ Sentimiento: {label} | Confianza del Modelo: {score:.2f}")
+
+                st.info(f"**Comentario procesado:**\n \"{txt}\"")
+                st.success(
+                    f"**✅ Sentimiento:** {label} | **Confianza del Modelo:** {score:.2f}"
+                )
+            else:
+                st.warning("⚠️ El comentario no puede estar vacío.")
 
 # --- MÓDULO: CARGA CSV ---
 elif menu == "Carga CSV":
     st.header("📁 Procesamiento Masivo de Archivos")
     st.info("Asegúrese de que el CSV tenga las columnas: producto, comentario, fecha")
-    archivo = st.file_uploader("Subir CSV", type=["csv"])
+    archivo = st.file_uploader(
+        "Subir CSV", type=["csv"], key=f"uploader_{st.session_state.uploader_key}"
+    )
     if archivo:
         df = fm.leer_csv(archivo)
         df.columns = df.columns.str.strip().str.lower()
 
-        #Casteo previo para normalizar los tipos de datos
+        # Casteo previo para normalizar los tipos de datos
         df["comentario"] = df["comentario"].astype(str)
-        if 'fecha' in df.columns:
-            df['fecha'] = pd.to_datetime(df['fecha'], dayfirst=True, errors='coerce')
-        
+        if "fecha" in df.columns:
+            df["fecha"] = pd.to_datetime(df["fecha"], dayfirst=True, errors="coerce")
+
         st.write("Vista previa de los datos a cargar:")
         st.dataframe(df.head(), use_container_width=True)
 
@@ -67,9 +80,11 @@ elif menu == "Carga CSV":
                 f_val = r.get("fecha")
                 f_final = f_val.strftime("%d/%m/%Y %H:%M") if pd.notna(f_val) else None
 
-                db.insertar_resena(r.get("producto", "Café"), r["comentario"], label, score, f_final)
+                db.insertar_resena(
+                    r.get("producto", "Café"), r["comentario"], label, score, f_final
+                )
 
-            fm.registrar_log(f"Carga masiva: {len(df)} registros procesados.")    
+            fm.registrar_log(f"Carga masiva: {len(df)} registros procesados.")
             st.success(f"Carga completada: {len(df)} registros procesados.")
 
 # --- MÓDULO: BASE DE DATOS (NUEVO) ---
@@ -148,7 +163,8 @@ if st.sidebar.button("🗑️ Limpiar Base de Datos"):
         db.limpiar_datos()
         fm.registrar_log("Base de datos limpiada por el usuario.")
         st.sidebar.success("¡Datos eliminados!")
-    
+
+        st.session_state.uploader_key += 1 # Reinicia el cargador de archivos
         st.session_state.modulo_seleccionado = "Base de Datos"
         st.rerun()
     except Exception as e:
