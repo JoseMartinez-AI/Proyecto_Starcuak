@@ -1,201 +1,531 @@
 ﻿producto;comentario;fecha
-Espresso;Sabor intenso y muy bueno.;7/01/2026 16:12
-Americano;Un poco aguado.;4/01/2026 09:17
-Espresso;Me encantó el aroma.;3/01/2026 02:38
-Snack;Mejoraría la presentación.;1/01/2026 18:30
-Espresso;Un poco amargo para mi gusto.;6/01/2026 07:21
-Americano;Mejor que el de la competencia.;1/01/2026 15:27
-Snack;El croissant muy hojaldrado.;14/01/2026 05:27
-Capuccino;La canela le da el toque.;11/01/2026 21:40
-Snack;Snack saludable y rico.;1/01/2026 03:47
-Americano;La temperatura ideal.;9/01/2026 06:12
-Latte;Sabor suave y dulce.;6/01/2026 05:25
-Latte;El arte latte muy bonito.;3/01/2026 06:01
-Capuccino;Poco café, mucha leche.;9/01/2026 17:07
-Latte;Delicioso.;7/01/2026 10:05
-Espresso;Sabor persistente.;14/01/2026 00:22
-Espresso;El mejor espresso de la zona.;2/01/2026 21:54
-Snack;Snack saludable y rico.;9/01/2026 18:40
-Snack;El croissant muy hojaldrado.;2/01/2026 16:31
-Espresso;Ideal para despertar.;8/01/2026 00:34
-Espresso;Ideal para despertar.;3/01/2026 10:50
-Capuccino;Espuma muy firme.;12/01/2026 00:07
-Latte;Sabor suave y dulce.;9/01/2026 23:38
-Latte;Demasiada leche.;7/01/2026 11:31
-Espresso;Un clásico.;5/01/2026 03:41
-Snack;El croissant muy hojaldrado.;4/01/2026 23:11
-Capuccino;Excelente presentación.;7/01/2026 13:15
-Snack;El croissant muy hojaldrado.;8/01/2026 20:54
-Espresso;Ideal para despertar.;1/01/2026 18:41
-Latte;Me encanta la textura.;7/01/2026 11:58
-Espresso;Ideal para despertar.;14/01/2026 18:24
-Latte;Demasiada leche.;13/01/2026 02:49
-Capuccino;Un poco dulce.;4/01/2026 11:13
-Latte;Sabor suave y dulce.;6/01/2026 23:40
-Snack;Muy sabroso.;7/01/2026 09:03
-Snack;Mejoraría la presentación.;10/01/2026 16:40
-Latte;Demasiada leche.;4/01/2026 08:35
-Snack;Porción generosa.;3/01/2026 04:57
-Espresso;Un poco amargo para mi gusto.;4/01/2026 17:02
-Americano;La temperatura ideal.;2/01/2026 13:00
-Capuccino;Excelente presentación.;12/01/2026 08:39
-Snack;Snack saludable y rico.;14/01/2026 10:16
-Espresso;Un poco amargo para mi gusto.;14/01/2026 00:48
-Latte;Muy reconfortante.;3/01/2026 16:59
-Latte;Me encanta la textura.;4/01/2026 20:08
-Capuccino;Mucha espuma, me encanta.;7/01/2026 09:26
-Snack;Muffin delicioso.;13/01/2026 07:44
-Espresso;Muy fuerte, como debe ser.;13/01/2026 07:44
-Snack;El croissant muy hojaldrado.;4/01/2026 17:02
-Latte;Sabor suave y dulce.;14/01/2026 02:12
-Snack;El sandwich estaba muy fresco.;8/01/2026 20:50
-Capuccino;Mucha espuma, me encanta.;3/01/2026 17:10
-Latte;Temperatura perfecta.;6/01/2026 19:29
-Espresso;Ideal para despertar.;14/01/2026 18:30
-Espresso;Un poco amargo para mi gusto.;12/01/2026 19:06
-Espresso;Me encantó el aroma.;4/01/2026 01:15
-Americano;Sencillo pero rico.;14/01/2026 08:17
-Americano;Buen sabor de grano.;13/01/2026 19:23
-Snack;Mejoraría la presentación.;6/01/2026 03:22
-Snack;El croissant muy hojaldrado.;8/01/2026 13:35
-Capuccino;Muy rico.;11/01/2026 15:12
-Snack;Porción generosa.;3/01/2026 22:29
-Americano;Un poco aguado.;2/01/2026 13:17
-Latte;La leche estaba muy cremosa.;14/01/2026 10:40
-Americano;Muy aromático.;6/01/2026 08:17
-Espresso;Un poco amargo para mi gusto.;2/01/2026 10:17
-Americano;Llegó un poco frío.;1/01/2026 18:17
-Latte;El arte latte muy bonito.;13/01/2026 11:31
-Americano;Buen sabor de grano.;12/01/2026 18:46
-Americano;Mejor que el de la competencia.;4/01/2026 05:04
-Snack;Estaba un poco seco.;12/01/2026 11:21
-Americano;Sencillo pero rico.;10/01/2026 21:07
-Americano;Llegó un poco frío.;3/01/2026 08:27
-Capuccino;Muy rico.;11/01/2026 06:45
-Capuccino;Un poco dulce.;2/01/2026 07:33
-Espresso;Sabor intenso y muy bueno.;10/01/2026 18:32
-Latte;El arte latte muy bonito.;7/01/2026 00:51
-Americano;Un poco aguado.;14/01/2026 00:24
-Capuccino;Sabor equilibrado.;11/01/2026 05:45
-Americano;Buen sabor de grano.;12/01/2026 05:30
-Americano;Llegó un poco frío.;11/01/2026 18:08
-Snack;La galleta un poco dura.;2/01/2026 05:28
-Snack;El sandwich estaba muy fresco.;3/01/2026 06:19
-Americano;Perfecto para la mañana.;10/01/2026 20:45
-Capuccino;Un poco dulce.;6/01/2026 04:31
-Capuccino;Mucha espuma, me encanta.;4/01/2026 23:54
-Capuccino;Mucha espuma, me encanta.;10/01/2026 11:26
-Latte;Sabor muy balanceado.;7/01/2026 22:10
-Capuccino;Ideal para la tarde.;12/01/2026 19:30
-Americano;Un poco aguado.;8/01/2026 04:50
-Americano;Equilibrado y suave.;14/01/2026 03:51
-Espresso;Le faltó temperatura.;2/01/2026 09:18
-Espresso;Un clásico.;12/01/2026 13:44
-Snack;Muy sabroso.;4/01/2026 19:42
-Espresso;Me encantó el aroma.;2/01/2026 22:40
-Americano;Llegó un poco frío.;2/01/2026 15:35
-Americano;La temperatura ideal.;3/01/2026 21:50
-Snack;El croissant muy hojaldrado.;1/01/2026 23:09
-Snack;La galleta un poco dura.;11/01/2026 04:12
-Snack;Estaba un poco seco.;13/01/2026 16:32
-Latte;Temperatura perfecta.;5/01/2026 22:59
-Latte;Demasiada leche.;7/01/2026 10:43
-Capuccino;Sabor equilibrado.;8/01/2026 06:45
-Capuccino;Muy rico.;2/01/2026 18:15
-Espresso;Sabor persistente.;14/01/2026 15:58
-Espresso;Un poco amargo para mi gusto.;14/01/2026 01:11
-Americano;Mejor que el de la competencia.;7/01/2026 10:29
-Americano;Muy refrescante.;2/01/2026 16:04
-Americano;Muy refrescante.;7/01/2026 22:01
-Americano;Sencillo pero rico.;14/01/2026 04:26
-Latte;Delicioso.;13/01/2026 20:07
-Espresso;Me encantó el aroma.;8/01/2026 06:24
-Espresso;Excelente crema.;7/01/2026 10:03
-Espresso;Un poco amargo para mi gusto.;14/01/2026 10:16
-Americano;Buen sabor de grano.;7/01/2026 20:08
-Snack;El croissant muy hojaldrado.;9/01/2026 07:44
-Americano;Buen sabor de grano.;13/01/2026 06:25
-Capuccino;Espuma muy firme.;2/01/2026 05:35
-Espresso;El mejor espresso de la zona.;7/01/2026 17:10
-Espresso;Sabor intenso y muy bueno.;9/01/2026 02:18
-Americano;Buen sabor de grano.;4/01/2026 22:07
-Capuccino;Ideal para la tarde.;11/01/2026 09:08
-Snack;El sandwich estaba muy fresco.;3/01/2026 17:10
-Espresso;Excelente crema.;14/01/2026 05:49
-Espresso;Le faltó temperatura.;14/01/2026 09:52
-Americano;La temperatura ideal.;4/01/2026 02:14
-Espresso;Muy fuerte, como debe ser.;9/01/2026 20:25
-Espresso;Le faltó temperatura.;6/01/2026 02:22
-Americano;Llegó un poco frío.;9/01/2026 14:01
-Snack;Mejoraría la presentación.;4/01/2026 18:02
-Americano;Perfecto para la mañana.;5/01/2026 07:08
-Capuccino;Mucha espuma, me encanta.;5/01/2026 08:29
-Latte;Me encanta la textura.;7/01/2026 00:34
-Latte;Sabor suave y dulce.;3/01/2026 14:58
-Capuccino;Mucha espuma, me encanta.;12/01/2026 10:11
-Americano;Un poco aguado.;12/01/2026 04:08
-Latte;Temperatura perfecta.;6/01/2026 12:35
-Americano;Equilibrado y suave.;5/01/2026 16:30
-Capuccino;Muy rico.;7/01/2026 18:17
-Espresso;Muy fuerte, como debe ser.;9/01/2026 12:33
-Snack;Mejoraría la presentación.;14/01/2026 00:22
-Latte;La leche estaba muy cremosa.;3/01/2026 19:11
-Latte;Sabor suave y dulce.;7/01/2026 10:38
-Espresso;Un poco amargo para mi gusto.;11/01/2026 13:09
-Latte;Muy reconfortante.;11/01/2026 14:13
-Snack;Muy sabroso.;3/01/2026 19:22
-Capuccino;Sabor auténtico.;5/01/2026 14:43
-Latte;La leche estaba muy cremosa.;11/01/2026 14:01
-Espresso;Me encantó el aroma.;14/01/2026 01:40
-Americano;Muy refrescante.;11/01/2026 11:14
-Espresso;Le faltó temperatura.;8/01/2026 14:52
-Espresso;Muy fuerte, como debe ser.;13/01/2026 07:25
-Latte;Me encanta la textura.;8/01/2026 22:00
-Capuccino;Espuma muy firme.;14/01/2026 10:58
-Americano;Un poco aguado.;11/01/2026 04:55
-Capuccino;Sabor equilibrado.;14/01/2026 19:31
-Latte;Me encanta la textura.;14/01/2026 07:11
-Espresso;Muy fuerte, como debe ser.;7/01/2026 23:08
-Americano;La temperatura ideal.;8/01/2026 19:43
-Capuccino;Un poco dulce.;11/01/2026 17:34
-Americano;Mejor que el de la competencia.;12/01/2026 11:39
-Americano;Llegó un poco frío.;7/01/2026 21:19
-Snack;Estaba un poco seco.;9/01/2026 03:15
-Espresso;Ideal para despertar.;8/01/2026 12:49
-Americano;Un poco aguado.;4/01/2026 13:50
-Espresso;Sabor intenso y muy bueno.;6/01/2026 22:37
-Capuccino;Sabor auténtico.;2/01/2026 18:25
-Capuccino;Excelente presentación.;14/01/2026 23:21
-Americano;La temperatura ideal.;12/01/2026 23:59
-Capuccino;La canela le da el toque.;4/01/2026 13:57
-Espresso;Un poco amargo para mi gusto.;11/01/2026 07:39
-Americano;Perfecto para la mañana.;13/01/2026 13:43
-Capuccino;Mucha espuma, me encanta.;14/01/2026 12:42
-Americano;Llegó un poco frío.;12/01/2026 01:54
-Americano;Sencillo pero rico.;13/01/2026 21:24
-Snack;Estaba un poco seco.;8/01/2026 16:50
-Capuccino;Sabor auténtico.;13/01/2026 06:03
-Capuccino;Ideal para la tarde.;11/01/2026 19:45
-Americano;Sencillo pero rico.;11/01/2026 22:11
-Latte;Demasiada leche.;7/01/2026 17:32
-Snack;Porción generosa.;6/01/2026 19:22
-Latte;Sabor muy balanceado.;2/01/2026 21:08
-Latte;Demasiada leche.;7/01/2026 14:17
-Latte;Muy reconfortante.;14/01/2026 02:39
-Espresso;Excelente crema.;4/01/2026 15:51
-Americano;La temperatura ideal.;4/01/2026 17:00
-Americano;Llegó un poco frío.;11/01/2026 01:40
-Capuccino;Muy rico.;14/01/2026 04:05
-Capuccino;Excelente presentación.;2/01/2026 12:16
-Americano;La temperatura ideal.;10/01/2026 10:53
-Snack;El sandwich estaba muy fresco.;14/01/2026 23:21
-Capuccino;Un poco dulce.;1/01/2026 03:26
-Latte;Temperatura perfecta.;10/01/2026 11:11
-Capuccino;Ideal para la tarde.;14/01/2026 06:08
-Snack;El croissant muy hojaldrado.;12/01/2026 20:24
-Americano;Buen sabor de grano.;11/01/2026 13:53
-Capuccino;Mucha espuma, me encanta.;10/01/2026 10:31
-Latte;Me encanta la textura.;5/01/2026 00:08
-Capuccino;Sabor equilibrado.;13/01/2026 23:08
-Espresso;El mejor espresso de la zona.;14/01/2026 16:46
-Espresso;Un poco amargo para mi gusto.;11/01/2026 09:41
+Espresso;Espuma muy firme.;4/12/2025 15:41
+Capuccino;Un clásico.;29/12/2025 08:26
+Capuccino;Sabor auténtico.;12/11/2025 02:12
+Americano;El sandwich estaba muy fresco.;12/11/2025 23:49
+Americano;Excelente presentación.;15/11/2025 07:26
+Latte;Temperatura perfecta.;19/12/2025 07:45
+Capuccino;Sabor suave y dulce.;13/11/2025 20:23
+Latte;Muy sabroso.;26/11/2025 01:15
+Espresso;Un clásico.;18/11/2025 01:49
+Americano;Perfecto para la mañana.;26/10/2025 09:04
+Espresso;Snack saludable y rico.;10/11/2025 20:53
+Espresso;Temperatura perfecta.;11/12/2025 07:31
+Capuccino;Muy reconfortante.;17/12/2025 09:38
+Latte;Muy rico.;20/12/2025 22:53
+Espresso;Equilibrado y suave.;19/11/2025 21:59
+Americano;Excelente presentación.;18/11/2025 14:04
+Capuccino;Muy aromático.;23/11/2025 05:37
+Latte;Porción generosa.;17/11/2025 10:34
+Americano;Muy aromático.;14/11/2025 11:24
+Latte;Me encantó el aroma.;16/10/2025 12:10
+Latte;Excelente crema.;11/11/2025 13:14
+Latte;Un poco amargo para mi gusto.;4/12/2025 05:14
+Americano;Un poco amargo para mi gusto.;13/11/2025 14:57
+Capuccino;Muffin delicioso.;22/12/2025 12:58
+Latte;Muy fuerte, como debe ser.;9/12/2025 22:53
+Capuccino;Me encantó el aroma.;28/11/2025 15:08
+Americano;Un poco dulce.;19/11/2025 06:46
+Capuccino;Espuma muy firme.;16/11/2025 12:01
+Americano;Muy sabroso.;28/11/2025 13:49
+Latte;Equilibrado y suave.;22/11/2025 05:37
+Capuccino;Sabor intenso y muy bueno.;18/11/2025 07:25
+Espresso;El mejor espresso de la zona.;19/10/2025 13:33
+Americano;El mejor espresso de la zona.;2/12/2025 22:20
+Espresso;Estaba un poco seco.;1/11/2025 05:20
+Latte;Mejoraría la presentación.;19/11/2025 07:11
+Espresso;Demasiada leche.;18/12/2025 16:23
+Espresso;Sabor muy balanceado.;13/11/2025 22:53
+Capuccino;Sabor persistente.;14/12/2025 22:35
+Americano;Muy refrescante.;15/10/2025 09:40
+Espresso;Sabor persistente.;19/12/2025 14:38
+Capuccino;Ideal para despertar.;20/10/2025 12:19
+Americano;Muy refrescante.;1/12/2025 03:34
+Capuccino;Muffin delicioso.;8/11/2025 13:30
+Americano;Un poco aguado.;2/12/2025 15:37
+Capuccino;El croissant muy hojaldrado.;13/12/2025 19:42
+Americano;Muy refrescante.;26/10/2025 19:16
+Espresso;El sandwich estaba muy fresco.;28/10/2025 22:25
+Latte;Temperatura perfecta.;7/12/2025 08:09
+Latte;Mejor que el de la competencia.;3/12/2025 13:27
+Latte;Snack saludable y rico.;24/11/2025 17:07
+Espresso;Llegó un poco frío.;20/11/2025 22:33
+Americano;Mucha espuma, me encanta.;12/11/2025 11:54
+Capuccino;Sabor muy balanceado.;3/12/2025 04:16
+Espresso;Muffin delicioso.;17/12/2025 12:42
+Capuccino;El mejor espresso de la zona.;18/11/2025 14:44
+Capuccino;Poco café, mucha leche.;16/11/2025 13:29
+Espresso;Muy reconfortante.;23/10/2025 07:53
+Americano;Muy reconfortante.;18/11/2025 07:36
+Capuccino;Temperatura perfecta.;3/11/2025 07:45
+Capuccino;Muy refrescante.;27/12/2025 18:42
+Latte;Ideal para despertar.;10/11/2025 13:36
+Americano;Porción generosa.;28/10/2025 01:36
+Americano;La temperatura ideal.;26/10/2025 00:37
+Americano;Muy rico.;22/12/2025 02:26
+Americano;Ideal para despertar.;23/11/2025 07:38
+Capuccino;Muy reconfortante.;29/10/2025 05:06
+Capuccino;Sabor intenso y muy bueno.;28/12/2025 11:25
+Americano;Muy aromático.;17/12/2025 19:08
+Capuccino;Mejoraría la presentación.;5/11/2025 20:46
+Capuccino;Muy fuerte, como debe ser.;13/11/2025 08:50
+Latte;Demasiada leche.;31/12/2025 16:01
+Espresso;Muy aromático.;30/10/2025 19:48
+Capuccino;Demasiada leche.;24/10/2025 23:49
+Capuccino;Llegó un poco frío.;29/11/2025 14:37
+Americano;Snack saludable y rico.;29/10/2025 19:03
+Americano;Espuma muy firme.;1/12/2025 08:01
+Espresso;Un poco dulce.;23/12/2025 02:34
+Americano;La temperatura ideal.;27/12/2025 05:49
+Capuccino;Sencillo pero rico.;24/11/2025 19:49
+Americano;El sandwich estaba muy fresco.;10/12/2025 15:50
+Latte;Me encanta la textura.;27/10/2025 19:50
+Espresso;Sabor persistente.;9/12/2025 10:33
+Espresso;Equilibrado y suave.;18/10/2025 01:10
+Espresso;Sabor equilibrado.;5/11/2025 05:00
+Capuccino;Muy fuerte, como debe ser.;1/12/2025 01:55
+Capuccino;Muy reconfortante.;8/11/2025 03:17
+Latte;Un poco aguado.;17/11/2025 02:50
+Latte;La temperatura ideal.;10/12/2025 19:33
+Latte;Excelente crema.;5/12/2025 13:32
+Espresso;El croissant muy hojaldrado.;16/10/2025 10:06
+Capuccino;Excelente presentación.;26/10/2025 04:45
+Espresso;Me encantó el aroma.;21/10/2025 04:19
+Espresso;El croissant muy hojaldrado.;27/12/2025 01:53
+Capuccino;El arte latte muy bonito.;19/10/2025 05:15
+Americano;Sabor equilibrado.;8/11/2025 12:09
+Capuccino;Sabor intenso y muy bueno.;28/12/2025 01:07
+Latte;Equilibrado y suave.;26/12/2025 05:11
+Americano;Porción generosa.;17/12/2025 03:20
+Latte;Sabor auténtico.;27/10/2025 04:35
+Americano;Excelente presentación.;23/11/2025 06:09
+Latte;Estaba un poco seco.;31/12/2025 17:48
+Espresso;Estaba un poco seco.;29/10/2025 01:16
+Latte;Muy sabroso.;4/11/2025 23:51
+Espresso;Un poco dulce.;27/12/2025 00:40
+Espresso;Sabor persistente.;18/10/2025 15:37
+Espresso;Muy aromático.;21/10/2025 08:25
+Capuccino;Delicioso.;13/12/2025 12:10
+Capuccino;Estaba un poco seco.;26/12/2025 07:37
+Latte;La leche estaba muy cremosa.;10/11/2025 06:41
+Americano;Perfecto para la mañana.;7/12/2025 07:20
+Espresso;Mucha espuma, me encanta.;15/12/2025 11:39
+Espresso;Sabor suave y dulce.;19/12/2025 01:55
+Americano;Sabor auténtico.;27/11/2025 17:31
+Espresso;Me encantó el aroma.;28/10/2025 23:43
+Espresso;Equilibrado y suave.;20/11/2025 09:25
+Americano;Sabor equilibrado.;1/11/2025 02:53
+Espresso;Un poco amargo para mi gusto.;15/12/2025 20:52
+Capuccino;Sencillo pero rico.;10/11/2025 17:11
+Americano;Sabor persistente.;27/10/2025 12:58
+Americano;Un poco aguado.;25/11/2025 04:19
+Latte;Muy sabroso.;19/10/2025 11:37
+Capuccino;Espuma muy firme.;7/11/2025 00:56
+Espresso;La galleta un poco dura.;13/11/2025 13:23
+Espresso;Le faltó temperatura.;6/11/2025 03:25
+Capuccino;Muy reconfortante.;6/12/2025 19:36
+Latte;Muy aromático.;23/11/2025 07:56
+Capuccino;Sencillo pero rico.;25/10/2025 05:06
+Espresso;Me encanta la textura.;23/10/2025 07:02
+Latte;Poco café, mucha leche.;29/12/2025 15:14
+Capuccino;La leche estaba muy cremosa.;11/11/2025 00:33
+Capuccino;La canela le da el toque.;11/11/2025 12:19
+Espresso;Sabor muy balanceado.;1/12/2025 04:33
+Americano;El arte latte muy bonito.;26/10/2025 21:36
+Latte;Sabor auténtico.;6/12/2025 07:00
+Latte;El arte latte muy bonito.;16/11/2025 12:12
+Espresso;Un poco dulce.;6/12/2025 17:18
+Latte;Delicioso.;31/12/2025 09:20
+Americano;Muy rico.;5/11/2025 00:30
+Capuccino;Poco café, mucha leche.;3/11/2025 22:04
+Capuccino;Delicioso.;29/10/2025 05:41
+Latte;Un poco amargo para mi gusto.;17/11/2025 19:38
+Espresso;Porción generosa.;8/12/2025 12:55
+Latte;Ideal para despertar.;7/11/2025 09:53
+Capuccino;Mejor que el de la competencia.;5/12/2025 03:57
+Espresso;Llegó un poco frío.;31/12/2025 22:43
+Espresso;Sabor muy balanceado.;17/10/2025 04:08
+Espresso;Mejor que el de la competencia.;22/11/2025 09:30
+Espresso;Muffin delicioso.;18/12/2025 02:53
+Capuccino;La canela le da el toque.;26/10/2025 05:13
+Americano;Un poco aguado.;17/10/2025 01:58
+Capuccino;El sandwich estaba muy fresco.;5/11/2025 02:15
+Capuccino;Equilibrado y suave.;28/11/2025 13:51
+Latte;Sabor suave y dulce.;24/10/2025 15:44
+Americano;Excelente crema.;11/12/2025 19:01
+Capuccino;Buen sabor de grano.;27/12/2025 00:07
+Americano;Un poco aguado.;7/12/2025 03:35
+Latte;Excelente presentación.;30/11/2025 00:54
+Americano;Estaba un poco seco.;7/11/2025 13:43
+Espresso;Sabor auténtico.;15/10/2025 11:54
+Espresso;Espuma muy firme.;21/10/2025 05:03
+Americano;Sabor auténtico.;19/11/2025 00:17
+Capuccino;Ideal para despertar.;17/10/2025 18:44
+Americano;Muffin delicioso.;22/11/2025 08:38
+Latte;Delicioso.;30/10/2025 06:31
+Espresso;Mucha espuma, me encanta.;28/12/2025 03:13
+Capuccino;Perfecto para la mañana.;26/12/2025 12:38
+Latte;Delicioso.;31/12/2025 11:27
+Espresso;La canela le da el toque.;26/10/2025 10:20
+Espresso;Ideal para despertar.;10/12/2025 03:23
+Espresso;Poco café, mucha leche.;23/10/2025 21:11
+Capuccino;El mejor espresso de la zona.;6/12/2025 03:01
+Latte;Muy rico.;27/11/2025 13:51
+Espresso;Sabor auténtico.;26/10/2025 12:02
+Espresso;La leche estaba muy cremosa.;9/11/2025 10:45
+Espresso;Buen sabor de grano.;30/12/2025 11:57
+Americano;Sabor auténtico.;22/11/2025 11:45
+Latte;Mejoraría la presentación.;16/11/2025 09:55
+Espresso;Sabor intenso y muy bueno.;17/12/2025 16:25
+Latte;La leche estaba muy cremosa.;1/11/2025 10:29
+Latte;La galleta un poco dura.;7/12/2025 16:26
+Capuccino;El sandwich estaba muy fresco.;30/12/2025 16:36
+Americano;Delicioso.;30/10/2025 13:57
+Americano;La galleta un poco dura.;10/11/2025 14:37
+Espresso;Sabor equilibrado.;5/11/2025 03:53
+Capuccino;Ideal para la tarde.;2/12/2025 02:03
+Capuccino;Ideal para despertar.;23/12/2025 14:20
+Capuccino;Le faltó temperatura.;25/10/2025 10:39
+Americano;Un poco dulce.;28/11/2025 14:00
+Latte;Delicioso.;11/12/2025 20:55
+Espresso;Sabor equilibrado.;9/12/2025 13:04
+Espresso;Mejor que el de la competencia.;15/10/2025 10:13
+Capuccino;Un poco amargo para mi gusto.;22/11/2025 15:00
+Latte;Sabor intenso y muy bueno.;7/11/2025 22:08
+Espresso;El sandwich estaba muy fresco.;18/11/2025 19:01
+Americano;Le faltó temperatura.;25/10/2025 20:05
+Latte;Sabor persistente.;7/12/2025 03:24
+Espresso;La canela le da el toque.;28/10/2025 22:39
+Espresso;Excelente crema.;21/10/2025 20:54
+Americano;Le faltó temperatura.;28/12/2025 11:12
+Capuccino;Muy reconfortante.;25/12/2025 20:07
+Espresso;Sabor equilibrado.;25/12/2025 08:33
+Capuccino;Sabor equilibrado.;14/11/2025 22:14
+Espresso;Un poco aguado.;26/10/2025 13:01
+Espresso;El sandwich estaba muy fresco.;19/10/2025 02:52
+Americano;Llegó un poco frío.;14/12/2025 17:34
+Espresso;Temperatura perfecta.;29/11/2025 09:36
+Capuccino;Me encanta la textura.;30/11/2025 23:38
+Latte;Poco café, mucha leche.;21/11/2025 10:16
+Capuccino;Ideal para despertar.;15/10/2025 17:47
+Capuccino;La temperatura ideal.;4/12/2025 13:46
+Americano;Buen sabor de grano.;22/10/2025 01:40
+Espresso;Estaba un poco seco.;25/11/2025 10:29
+Americano;Muy rico.;5/11/2025 22:29
+Espresso;El arte latte muy bonito.;15/12/2025 20:57
+Espresso;Muy refrescante.;8/12/2025 14:11
+Espresso;Muy rico.;27/10/2025 11:46
+Capuccino;Muy aromático.;10/12/2025 15:54
+Americano;Mejoraría la presentación.;10/12/2025 22:01
+Capuccino;Muy reconfortante.;8/11/2025 04:45
+Americano;Perfecto para la mañana.;19/10/2025 04:20
+Latte;Espuma muy firme.;31/12/2025 05:15
+Espresso;Demasiada leche.;7/12/2025 07:48
+Espresso;Sencillo pero rico.;8/11/2025 12:57
+Americano;Sabor persistente.;24/12/2025 01:23
+Latte;Excelente crema.;29/10/2025 02:55
+Latte;Porción generosa.;8/12/2025 22:54
+Capuccino;Delicioso.;21/10/2025 21:06
+Espresso;Sabor suave y dulce.;25/11/2025 10:13
+Espresso;Sabor intenso y muy bueno.;5/11/2025 20:19
+Americano;Excelente presentación.;31/12/2025 14:48
+Capuccino;Buen sabor de grano.;16/10/2025 12:50
+Americano;La canela le da el toque.;26/12/2025 04:13
+Americano;Muy refrescante.;25/12/2025 09:23
+Americano;Buen sabor de grano.;25/12/2025 23:31
+Espresso;La leche estaba muy cremosa.;6/11/2025 12:14
+Latte;Sabor auténtico.;18/10/2025 15:13
+Capuccino;Muy aromático.;27/10/2025 21:10
+Capuccino;Sabor suave y dulce.;20/12/2025 10:49
+Capuccino;Un poco dulce.;18/10/2025 08:27
+Americano;Un poco aguado.;7/11/2025 07:39
+Americano;Un poco dulce.;2/11/2025 13:24
+Espresso;Un poco dulce.;9/11/2025 02:37
+Americano;Excelente presentación.;16/12/2025 09:14
+Espresso;El arte latte muy bonito.;22/12/2025 06:31
+Espresso;Poco café, mucha leche.;15/12/2025 17:07
+Espresso;Demasiada leche.;3/12/2025 14:59
+Latte;Mucha espuma, me encanta.;29/10/2025 00:44
+Latte;Mejoraría la presentación.;9/11/2025 08:30
+Latte;El arte latte muy bonito.;26/12/2025 09:31
+Espresso;Mucha espuma, me encanta.;31/12/2025 22:49
+Americano;Muy aromático.;27/11/2025 20:59
+Latte;Muy fuerte, como debe ser.;25/11/2025 07:10
+Capuccino;Mucha espuma, me encanta.;24/12/2025 11:56
+Latte;Sabor suave y dulce.;31/10/2025 14:32
+Latte;Sabor equilibrado.;21/10/2025 10:59
+Latte;Temperatura perfecta.;13/12/2025 16:25
+Americano;La galleta un poco dura.;15/12/2025 20:58
+Latte;Me encantó el aroma.;8/12/2025 18:16
+Americano;Muy rico.;20/10/2025 18:25
+Latte;Un clásico.;11/12/2025 01:24
+Latte;Delicioso.;1/12/2025 01:50
+Espresso;La galleta un poco dura.;10/12/2025 07:23
+Americano;Muy aromático.;25/11/2025 23:26
+Americano;Excelente crema.;21/12/2025 07:46
+Espresso;Estaba un poco seco.;10/12/2025 16:57
+Capuccino;Muy reconfortante.;24/10/2025 22:28
+Espresso;Me encanta la textura.;19/12/2025 02:42
+Latte;Me encantó el aroma.;28/10/2025 00:20
+Capuccino;Me encanta la textura.;11/11/2025 17:04
+Latte;El mejor espresso de la zona.;26/12/2025 13:03
+Espresso;Muy refrescante.;9/12/2025 12:39
+Americano;Me encanta la textura.;8/11/2025 17:03
+Capuccino;La canela le da el toque.;30/11/2025 07:16
+Capuccino;Muy sabroso.;31/12/2025 19:11
+Capuccino;El arte latte muy bonito.;25/12/2025 09:44
+Americano;Muy rico.;28/10/2025 16:54
+Capuccino;Sabor equilibrado.;21/11/2025 03:43
+Espresso;Muy sabroso.;31/12/2025 11:00
+Latte;Sabor muy balanceado.;14/11/2025 09:27
+Americano;La leche estaba muy cremosa.;7/12/2025 11:21
+Espresso;Buen sabor de grano.;8/12/2025 16:08
+Espresso;Un poco amargo para mi gusto.;3/12/2025 19:12
+Capuccino;El croissant muy hojaldrado.;16/10/2025 09:47
+Espresso;Muffin delicioso.;26/11/2025 15:11
+Latte;El mejor espresso de la zona.;6/11/2025 10:37
+Capuccino;Equilibrado y suave.;17/11/2025 01:25
+Americano;Ideal para despertar.;15/11/2025 13:31
+Capuccino;Un poco amargo para mi gusto.;31/10/2025 11:56
+Americano;La canela le da el toque.;4/11/2025 07:43
+Espresso;La galleta un poco dura.;17/12/2025 16:16
+Capuccino;Poco café, mucha leche.;15/10/2025 05:19
+Americano;La canela le da el toque.;6/12/2025 19:55
+Latte;Excelente crema.;6/11/2025 09:13
+Americano;Sabor muy balanceado.;16/10/2025 06:39
+Espresso;Le faltó temperatura.;29/11/2025 17:25
+Espresso;El mejor espresso de la zona.;8/12/2025 21:33
+Latte;Temperatura perfecta.;1/12/2025 16:29
+Americano;La leche estaba muy cremosa.;9/12/2025 15:11
+Espresso;Mejor que el de la competencia.;18/10/2025 20:20
+Latte;Muy refrescante.;22/11/2025 11:25
+Capuccino;Un poco amargo para mi gusto.;12/11/2025 19:03
+Capuccino;Equilibrado y suave.;16/12/2025 05:56
+Latte;Mejor que el de la competencia.;14/11/2025 21:53
+Capuccino;Poco café, mucha leche.;14/11/2025 21:42
+Americano;Excelente crema.;1/11/2025 03:02
+Espresso;Muy refrescante.;16/12/2025 16:43
+Capuccino;Demasiada leche.;26/11/2025 04:26
+Capuccino;Perfecto para la mañana.;25/11/2025 13:51
+Americano;Un clásico.;20/10/2025 05:56
+Capuccino;Espuma muy firme.;25/10/2025 02:52
+Espresso;Sabor muy balanceado.;10/11/2025 15:04
+Espresso;Mejoraría la presentación.;3/12/2025 09:34
+Latte;Ideal para despertar.;25/10/2025 22:44
+Latte;El sandwich estaba muy fresco.;9/12/2025 09:47
+Americano;Un clásico.;16/10/2025 16:53
+Americano;Ideal para despertar.;30/11/2025 09:49
+Latte;Perfecto para la mañana.;19/10/2025 10:46
+Latte;Excelente presentación.;6/11/2025 15:00
+Latte;Demasiada leche.;13/12/2025 08:16
+Espresso;El mejor espresso de la zona.;28/10/2025 01:22
+Espresso;Ideal para la tarde.;3/12/2025 07:04
+Espresso;Sabor muy balanceado.;23/12/2025 01:54
+Americano;Muy reconfortante.;3/12/2025 00:54
+Espresso;Un poco amargo para mi gusto.;11/11/2025 00:01
+Latte;Espuma muy firme.;19/10/2025 22:00
+Latte;Equilibrado y suave.;11/11/2025 11:40
+Capuccino;Poco café, mucha leche.;17/10/2025 01:12
+Capuccino;Un poco dulce.;17/11/2025 16:18
+Latte;Muy rico.;28/10/2025 09:55
+Americano;Porción generosa.;22/12/2025 13:12
+Americano;Mejor que el de la competencia.;20/11/2025 10:17
+Espresso;Estaba un poco seco.;8/11/2025 12:47
+Capuccino;Sencillo pero rico.;28/10/2025 20:31
+Espresso;Mejoraría la presentación.;14/12/2025 02:20
+Americano;Mejor que el de la competencia.;31/12/2025 16:40
+Americano;Un poco amargo para mi gusto.;4/12/2025 15:37
+Capuccino;Excelente crema.;9/12/2025 11:15
+Latte;Muy rico.;13/11/2025 23:44
+Latte;Un clásico.;15/12/2025 15:51
+Americano;Muffin delicioso.;22/10/2025 12:24
+Latte;Muy refrescante.;16/10/2025 04:10
+Americano;Sabor muy balanceado.;31/10/2025 19:08
+Latte;Un poco dulce.;23/12/2025 01:14
+Latte;Buen sabor de grano.;30/11/2025 16:55
+Espresso;La galleta un poco dura.;1/12/2025 17:04
+Latte;Excelente presentación.;1/12/2025 14:56
+Latte;Equilibrado y suave.;21/10/2025 08:48
+Latte;Sabor intenso y muy bueno.;16/11/2025 18:28
+Latte;Ideal para despertar.;21/11/2025 10:40
+Americano;Mucha espuma, me encanta.;17/12/2025 13:28
+Capuccino;El croissant muy hojaldrado.;18/11/2025 12:11
+Espresso;La leche estaba muy cremosa.;4/12/2025 06:36
+Americano;Muy aromático.;10/11/2025 17:27
+Espresso;Sabor muy balanceado.;22/12/2025 11:11
+Latte;Buen sabor de grano.;25/12/2025 00:20
+Capuccino;Muy fuerte, como debe ser.;7/11/2025 10:26
+Americano;La temperatura ideal.;19/11/2025 01:57
+Latte;El arte latte muy bonito.;24/10/2025 04:18
+Latte;Llegó un poco frío.;11/11/2025 14:00
+Latte;Mejor que el de la competencia.;3/12/2025 22:39
+Latte;Delicioso.;11/12/2025 16:51
+Capuccino;Sabor equilibrado.;16/11/2025 18:56
+Americano;Un clásico.;7/11/2025 19:18
+Espresso;Muy reconfortante.;6/11/2025 08:58
+Capuccino;Sabor persistente.;17/10/2025 16:36
+Latte;Excelente presentación.;17/12/2025 14:58
+Americano;Muy fuerte, como debe ser.;29/12/2025 18:46
+Latte;Porción generosa.;29/12/2025 09:41
+Espresso;La galleta un poco dura.;8/12/2025 10:35
+Espresso;Sabor muy balanceado.;20/10/2025 01:16
+Americano;La temperatura ideal.;27/12/2025 11:14
+Americano;La leche estaba muy cremosa.;27/10/2025 15:36
+Espresso;Perfecto para la mañana.;26/12/2025 16:18
+Espresso;Sabor auténtico.;26/11/2025 01:26
+Americano;Un clásico.;19/12/2025 04:04
+Espresso;La temperatura ideal.;11/12/2025 08:59
+Latte;Muy rico.;18/10/2025 08:38
+Latte;Muy refrescante.;2/12/2025 12:22
+Capuccino;Llegó un poco frío.;18/10/2025 09:26
+Americano;Ideal para despertar.;23/12/2025 11:12
+Capuccino;Muy fuerte, como debe ser.;9/11/2025 02:52
+Espresso;Sabor equilibrado.;20/11/2025 11:03
+Capuccino;Sabor suave y dulce.;26/11/2025 23:19
+Espresso;Mejoraría la presentación.;23/12/2025 22:03
+Capuccino;Muy refrescante.;27/10/2025 06:24
+Latte;Un poco aguado.;29/12/2025 20:12
+Espresso;Un clásico.;24/12/2025 13:16
+Capuccino;Sabor equilibrado.;20/10/2025 17:15
+Espresso;Muy sabroso.;27/11/2025 12:05
+Americano;Un clásico.;30/12/2025 02:56
+Espresso;Un poco dulce.;30/12/2025 07:12
+Capuccino;Un clásico.;20/11/2025 12:01
+Americano;Le faltó temperatura.;8/12/2025 11:03
+Americano;Equilibrado y suave.;25/10/2025 07:26
+Capuccino;Muy aromático.;3/12/2025 21:34
+Capuccino;Me encanta la textura.;20/12/2025 16:21
+Espresso;El sandwich estaba muy fresco.;6/11/2025 15:08
+Latte;El arte latte muy bonito.;5/12/2025 09:20
+Capuccino;Un poco aguado.;10/11/2025 20:49
+Espresso;Sabor muy balanceado.;4/12/2025 02:32
+Americano;Llegó un poco frío.;29/11/2025 11:07
+Latte;Sabor persistente.;24/12/2025 10:41
+Capuccino;Demasiada leche.;17/10/2025 19:56
+Capuccino;Mejor que el de la competencia.;8/11/2025 14:58
+Espresso;Estaba un poco seco.;21/12/2025 03:51
+Capuccino;Ideal para despertar.;15/11/2025 10:16
+Latte;Estaba un poco seco.;18/11/2025 16:04
+Espresso;Buen sabor de grano.;22/10/2025 22:12
+Americano;Equilibrado y suave.;9/11/2025 15:15
+Capuccino;El arte latte muy bonito.;27/11/2025 12:37
+Espresso;Mejoraría la presentación.;2/12/2025 00:59
+Latte;Me encanta la textura.;18/10/2025 09:56
+Espresso;Me encanta la textura.;21/10/2025 12:53
+Espresso;Un poco amargo para mi gusto.;19/11/2025 03:40
+Capuccino;Perfecto para la mañana.;4/11/2025 14:05
+Capuccino;Me encantó el aroma.;29/11/2025 03:09
+Capuccino;Delicioso.;7/12/2025 11:36
+Americano;Sabor equilibrado.;9/11/2025 13:56
+Capuccino;Delicioso.;23/10/2025 10:29
+Americano;Estaba un poco seco.;20/12/2025 01:53
+Capuccino;La temperatura ideal.;17/10/2025 08:40
+Latte;Un clásico.;26/11/2025 11:44
+Americano;Ideal para la tarde.;30/11/2025 22:49
+Americano;Sabor suave y dulce.;6/12/2025 08:38
+Espresso;Poco café, mucha leche.;1/11/2025 20:04
+Latte;Temperatura perfecta.;30/12/2025 05:32
+Americano;Muy rico.;8/12/2025 14:58
+Americano;Excelente presentación.;2/11/2025 08:59
+Espresso;Excelente crema.;6/11/2025 09:25
+Americano;Excelente presentación.;15/10/2025 00:27
+Americano;Llegó un poco frío.;11/11/2025 03:47
+Capuccino;Muy fuerte, como debe ser.;19/12/2025 06:16
+Capuccino;Equilibrado y suave.;15/12/2025 05:27
+Espresso;Ideal para la tarde.;11/11/2025 05:40
+Latte;El arte latte muy bonito.;18/12/2025 11:58
+Capuccino;Excelente presentación.;11/11/2025 11:36
+Espresso;Estaba un poco seco.;28/11/2025 06:55
+Capuccino;Mejoraría la presentación.;24/10/2025 16:12
+Espresso;Mejoraría la presentación.;16/11/2025 19:07
+Americano;Un poco amargo para mi gusto.;23/12/2025 09:16
+Capuccino;Sabor muy balanceado.;17/10/2025 08:02
+Latte;Mejoraría la presentación.;27/11/2025 17:00
+Espresso;Porción generosa.;22/12/2025 04:13
+Capuccino;Sabor suave y dulce.;31/10/2025 23:22
+Capuccino;Excelente presentación.;28/10/2025 16:44
+Americano;Me encantó el aroma.;25/11/2025 06:47
+Americano;La canela le da el toque.;16/10/2025 23:35
+Americano;Delicioso.;6/12/2025 17:45
+Espresso;Un poco amargo para mi gusto.;23/12/2025 19:16
+Latte;Le faltó temperatura.;23/11/2025 08:23
+Espresso;Ideal para la tarde.;31/12/2025 11:12
+Capuccino;Sabor persistente.;2/12/2025 20:16
+Latte;Un poco dulce.;3/12/2025 22:14
+Capuccino;Delicioso.;23/12/2025 12:17
+Americano;Perfecto para la mañana.;30/10/2025 10:16
+Espresso;Mucha espuma, me encanta.;6/12/2025 00:35
+Americano;Porción generosa.;25/12/2025 12:19
+Espresso;Muy reconfortante.;15/10/2025 02:19
+Capuccino;Espuma muy firme.;20/12/2025 21:26
+Latte;Excelente crema.;26/11/2025 02:41
+Latte;Muffin delicioso.;12/11/2025 10:16
+Capuccino;Sabor suave y dulce.;21/11/2025 06:38
+Espresso;Muy sabroso.;21/12/2025 03:31
+Americano;Perfecto para la mañana.;28/11/2025 00:15
+Capuccino;Un poco amargo para mi gusto.;1/12/2025 05:24
+Latte;Un clásico.;26/11/2025 04:03
+Espresso;Excelente presentación.;2/11/2025 20:13
+Americano;Muy refrescante.;21/11/2025 22:49
+Capuccino;Llegó un poco frío.;5/11/2025 10:36
+Espresso;Me encanta la textura.;27/10/2025 19:18
+Americano;La leche estaba muy cremosa.;20/12/2025 23:27
+Espresso;Muy aromático.;27/11/2025 01:43
+Latte;Sabor persistente.;31/10/2025 12:38
+Capuccino;Porción generosa.;16/12/2025 13:55
+Latte;Mejor que el de la competencia.;19/12/2025 05:23
+Latte;La canela le da el toque.;19/12/2025 16:21
+Latte;Un clásico.;23/10/2025 16:55
+Capuccino;Llegó un poco frío.;5/12/2025 18:40
+Espresso;Sencillo pero rico.;25/10/2025 10:06
+Latte;Sabor persistente.;7/11/2025 10:39
+Latte;Sabor suave y dulce.;19/10/2025 01:02
+Capuccino;Muy sabroso.;24/10/2025 10:19
+Americano;Porción generosa.;11/12/2025 08:30
+Americano;Temperatura perfecta.;30/10/2025 03:32
+Capuccino;Sabor persistente.;13/12/2025 01:49
+Capuccino;Excelente crema.;16/10/2025 06:08
+Capuccino;El arte latte muy bonito.;17/12/2025 07:13
+Americano;La canela le da el toque.;15/10/2025 17:33
+Latte;El croissant muy hojaldrado.;3/11/2025 16:34
+Americano;Sabor auténtico.;21/10/2025 20:25
+Latte;La leche estaba muy cremosa.;17/10/2025 00:10
+Americano;Snack saludable y rico.;20/10/2025 22:37
+Espresso;Un poco dulce.;17/10/2025 23:28
+Espresso;Excelente crema.;9/12/2025 12:46
+Capuccino;Muy refrescante.;11/12/2025 17:36
+Espresso;Muy rico.;18/12/2025 10:20
+Espresso;Ideal para despertar.;19/12/2025 12:41
+Americano;La canela le da el toque.;25/10/2025 15:43
+Espresso;El croissant muy hojaldrado.;23/10/2025 02:35
+Capuccino;Muy sabroso.;22/11/2025 17:08
+Capuccino;Muy refrescante.;1/11/2025 23:38
+Capuccino;La temperatura ideal.;21/11/2025 21:31
+Espresso;Sabor suave y dulce.;30/12/2025 06:06
+Espresso;Mucha espuma, me encanta.;9/11/2025 06:13
+Capuccino;La galleta un poco dura.;24/11/2025 14:43
+Espresso;Delicioso.;4/11/2025 23:06
+Americano;Demasiada leche.;16/11/2025 09:42
+Americano;Espuma muy firme.;30/10/2025 20:09
+Americano;Muy aromático.;21/11/2025 13:21
+Latte;Muy aromático.;15/11/2025 07:21
+Americano;La galleta un poco dura.;15/12/2025 07:09
+Espresso;Porción generosa.;6/11/2025 10:43
+Capuccino;Mejoraría la presentación.;9/12/2025 21:08
+Latte;Equilibrado y suave.;20/11/2025 13:15
+Espresso;Equilibrado y suave.;20/10/2025 07:20
+Americano;La canela le da el toque.;15/11/2025 23:27
+Capuccino;Muy fuerte, como debe ser.;20/10/2025 07:36
+Capuccino;Poco café, mucha leche.;3/11/2025 04:05
+Latte;Muy fuerte, como debe ser.;21/12/2025 07:18
+Espresso;Un poco aguado.;2/11/2025 06:25
+Latte;Ideal para la tarde.;28/10/2025 07:32
+Latte;Sabor intenso y muy bueno.;8/12/2025 16:10
+Latte;Ideal para la tarde.;30/11/2025 15:10
+Capuccino;Me encantó el aroma.;15/12/2025 05:02
+Americano;Sabor equilibrado.;19/10/2025 02:09
+Americano;Sabor equilibrado.;22/12/2025 10:06
+Capuccino;Delicioso.;26/11/2025 17:04
+Espresso;Me encanta la textura.;22/11/2025 08:38
+Americano;Sabor auténtico.;4/11/2025 02:03
+Espresso;Excelente crema.;23/12/2025 02:06

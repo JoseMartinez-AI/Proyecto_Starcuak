@@ -2,94 +2,127 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import pandas as pd
 from datetime import datetime
-from models.database import StarcuakDB
-from models.ia_model import AnalizadorIA
-from models.file_manager import FileManager
 
-# Orquestación de la solución
+# Importación simplificada gracias al __init__.py
+from models import StarcuakDB, AnalizadorIA, FileManager
+
+# Instancias
 db = StarcuakDB()
 ia = AnalizadorIA()
 fm = FileManager()
 
-st.set_page_config(page_title="Starcuak Admin", page_icon="☕")
-st.title("☕ Starcuak: Dashboard de Sentimiento")
+st.set_page_config(page_title="Starcuak Admin Pro", page_icon="☕", layout="wide")
 
-st.sidebar.divider()
-st.sidebar.subheader("Mantenimiento")
-if st.sidebar.button("🗑️ Limpiar Base de Datos"):
-    try:
-        db.limpiar_datos()
-        fm.registrar_log("Base de datos limpiada por el usuario.")
-        st.sidebar.success("¡Datos eliminados correctamente!")
-        st.rerun()
-    except Exception as e:
-        st.sidebar.error(f"Error: {e}")
+# --- ESTADO DE SESIÓN ---
+if "modulo_seleccionado" not in st.session_state:
+    st.session_state.modulo_seleccionado = "Nueva Reseña"
 
-menu = st.sidebar.selectbox("Módulo", ["Nueva Reseña", "Carga CSV", "Dashboard Pro"])
+# --- SIDEBAR ---
+st.sidebar.title("☕ Starcuak Panel")
+if st.sidebar.button("🗑️ Limpiar Sistema"):
+    db.limpiar_datos()
+    st.session_state.modulo_seleccionado = "Base de Datos"
+    st.rerun()
 
+menu = st.sidebar.selectbox(
+    "Módulo",
+    ["Nueva Reseña", "Carga CSV", "Base de Datos", "Dashboard Pro"],
+    index=["Nueva Reseña", "Carga CSV", "Base de Datos", "Dashboard Pro"].index(
+        st.session_state.modulo_seleccionado
+    ),
+)
+st.session_state.modulo_seleccionado = menu
+
+# --- MÓDULO: NUEVA RESEÑA ---
 if menu == "Nueva Reseña":
-    with st.form("starcuak_form"):
-        prod = st.selectbox(
-            "Café/Acompañante", ["Espresso", "Americano", "Latte", "Capuccino"]
-        )
-        txt = st.text_area("Opinión del cliente")
+    st.header("📝 Nueva Reseña Manual")
+    with st.form("form_manual"):
+        prod = st.selectbox("Producto", ["Espresso", "Americano", "Latte", "Capuccino"])
+        txt = st.text_area("Comentario")
         if st.form_submit_button("Analizar"):
             label, score = ia.analizar(txt)
+            fecha = datetime.now().strftime("%d/%m/%Y %H:%M")
+            db.insertar_resena(prod, txt, label, score, fecha)
+            st.success(f"Sentimiento: {label}")
 
-            current_date = datetime.now().strftime("%d/%m/%Y %H:%M")
-            db.insertar_resena(prod, txt, label, score, current_date)
-            fm.registrar_log(f"Análisis manual: {prod} -> {label}")
-            st.success(
-                f"Sentimiento: {label} | Nivel de Confianza del Modelo: {score:.2f}"
-            )
-
+# --- MÓDULO: CARGA CSV ---
 elif menu == "Carga CSV":
-    st.subheader("📁 Procesamiento de Archivos")
-    archivo = st.file_uploader("Subir CSV de reseñas", type=["csv"])
+    st.header("📁 Carga Masiva")
+    archivo = st.file_uploader("Subir CSV", type=["csv"])
     if archivo:
         df = fm.leer_csv(archivo)
-        df.columns = df.columns.str.strip().str.lower()
+        if st.button("🚀 Procesar"):
+            for _, r in df.iterrows():
+                l, s = ia.analizar(str(r["comentario"]))
+                # Validar fecha del CSV
+                f = r.get("fecha")
+                db.insertar_resena(r.get("producto", "Café"), r["comentario"], l, s, f)
+            st.success("Carga completada")
 
-        if "producto" in df.columns:
-            df["producto"] = df["producto"].astype(str).str.strip()
-        if "comentario" in df.columns:
-            df["comentario"] = df["comentario"].astype(str).str.strip()
-        if "fecha" in df.columns:
-            df["fecha"] = pd.to_datetime(df["fecha"], dayfirst=True, errors="coerce")
-
-        if st.button("Procesar Todo"):
-            for _, row in df.iterrows():
-                label, score = ia.analizar(row["comentario"])
-
-                f_original = row.get("fecha")
-                if pd.notna(f_original):
-                    f_final = f_original.strftime("%d/%m/%Y %H:%M")
-                else:
-                    f_final = None
-
-                db.insertar_resena(
-                    row.get("producto", "Café"),
-                    row["comentario"],
-                    label,
-                    score,
-                    f_final,
-                )
-
-            fm.registrar_log(f"Carga masiva: {len(df)} registros procesados desde CSV.")
-
-            fm.guardar_binario(df.to_dict())
-            st.success(f"¡{len(df)} registros procesados y persistidos!")
-
-elif menu == "Dashboard Pro":
+# --- MÓDULO: BASE DE DATOS (NUEVO) ---
+elif menu == "Base de Datos":
+    st.header("💾 Gestión de Datos (Raw Data)")
     df_data = db.obtener_datos()
     if not df_data.empty:
-        st.write("📊 Resumen de Impacto Starcuak")
+        st.write(f"Total de registros: {len(df_data)}")
+        # Buscador simple
+        busqueda = st.text_input("🔍 Buscar en comentarios")
+        if busqueda:
+            df_data = df_data[df_data["comentario"].str.contains(busqueda, case=False)]
 
-        # Gráfico de pastel
-        fig, ax = plt.subplots()
-        df_data["sentimiento"].value_counts().plot(kind="pie", autopct="%1.1f%%", ax=ax)
-        st.pyplot(fig)
-        st.write("Registros en la Base de Datos:")
-        st.dataframe(df_data, hide_index=True, use_container_width=True)
+        st.dataframe(df_data, use_container_width=True, hide_index=True)
     else:
-        st.info("Sin datos para mostrar.")
+        st.info("La base de datos está vacía.")
+
+# --- MÓDULO: DASHBOARD PRO (MEJORADO) ---
+elif menu == "Dashboard Pro":
+    st.header("📊 Análisis de Sentimiento Avanzado")
+    df_data = db.obtener_datos()
+
+    if not df_data.empty:
+        # Preparación de datos para gráficos
+        df_data["fecha_dt"] = pd.to_datetime(df_data["fecha"], dayfirst=True)
+
+        # FILA 1: KPIs
+        kpi1, kpi2, kpi3 = st.columns(3)
+        kpi1.metric("Total Reseñas", len(df_data))
+        pos_perc = (
+            len(df_data[df_data["sentimiento"] == "Positivo"]) / len(df_data)
+        ) * 100
+        kpi2.metric("Sentimiento Positivo", f"{pos_perc:.1f}%")
+        kpi3.metric("Confianza Promedio", f"{df_data['confianza'].mean():.2f}")
+
+        # FILA 2: Gráficos principales
+        col_a, col_b = st.columns(2)
+
+        with col_a:
+            st.subheader("Distribución Global")
+            fig1, ax1 = plt.subplots()
+            df_data["sentimiento"].value_counts().plot(
+                kind="pie",
+                autopct="%1.1f%%",
+                ax=ax1,
+                colors=["#2ecc71", "#e74c3c", "#f1c40f"],
+            )
+            st.pyplot(fig1)
+
+        with col_b:
+            st.subheader("Sentimiento por Producto")
+            # Gráfico de barras apiladas
+            ct = pd.crosstab(df_data["producto"], df_data["sentimiento"])
+            fig2, ax2 = plt.subplots()
+            ct.plot(kind="bar", stacked=True, ax=ax2)
+            plt.xticks(rotation=45)
+            st.pyplot(fig2)
+
+        # FILA 3: Tendencia Temporal
+        st.subheader("📈 Tendencia de Reseñas por Día")
+        df_line = (
+            df_data.groupby(df_data["fecha_dt"].dt.date)
+            .size()
+            .reset_index(name="cantidad")
+        )
+        st.line_chart(df_line.set_index("fecha_dt"))
+
+    else:
+        st.info("Sin datos para graficar.")
