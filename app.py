@@ -17,12 +17,8 @@ st.set_page_config(page_title="Starcuak Admin Pro", page_icon="☕", layout="wid
 if "modulo_seleccionado" not in st.session_state:
     st.session_state.modulo_seleccionado = "Nueva Reseña"
 
-# --- SIDEBAR ---
+# --- BARRA LATERAL ---
 st.sidebar.title("☕ Starcuak Panel")
-if st.sidebar.button("🗑️ Limpiar Sistema"):
-    db.limpiar_datos()
-    st.session_state.modulo_seleccionado = "Base de Datos"
-    st.rerun()
 
 menu = st.sidebar.selectbox(
     "Módulo",
@@ -37,31 +33,48 @@ st.session_state.modulo_seleccionado = menu
 if menu == "Nueva Reseña":
     st.header("📝 Nueva Reseña Manual")
     with st.form("form_manual"):
-        prod = st.selectbox("Producto", ["Espresso", "Americano", "Latte", "Capuccino"])
-        txt = st.text_area("Comentario")
+        prod = st.selectbox("Café", ["Espresso", "Americano", "Latte", "Capuccino"])
+        txt = st.text_area("Comentario", placeholder="Escriba el comentario aquí...")
         if st.form_submit_button("Analizar"):
-            label, score = ia.analizar(txt)
-            fecha = datetime.now().strftime("%d/%m/%Y %H:%M")
-            db.insertar_resena(prod, txt, label, score, fecha)
-            st.success(f"Sentimiento: {label}")
+            if txt.strip():
+                label, score = ia.analizar(txt)
+                current_date = datetime.now().strftime("%d/%m/%Y %H:%M")
+                db.insertar_resena(prod, txt, label, score, current_date)
+                fm.registrar_log(f"Analisis Manual: {prod} -> {label}")
+                st.success(f"✅ Sentimiento: {label} | Confianza del Modelo: {score:.2f}")
 
 # --- MÓDULO: CARGA CSV ---
 elif menu == "Carga CSV":
-    st.header("📁 Carga Masiva")
+    st.header("📁 Procesamiento Masivo de Archivos")
+    st.info("Asegúrese de que el CSV tenga las columnas: producto, comentario, fecha")
     archivo = st.file_uploader("Subir CSV", type=["csv"])
     if archivo:
         df = fm.leer_csv(archivo)
+        df.columns = df.columns.str.strip().str.lower()
+
+        #Casteo previo para normalizar los tipos de datos
+        df["comentario"] = df["comentario"].astype(str)
+        if 'fecha' in df.columns:
+            df['fecha'] = pd.to_datetime(df['fecha'], dayfirst=True, errors='coerce')
+        
+        st.write("Vista previa de los datos a cargar:")
+        st.dataframe(df.head(), use_container_width=True)
+
         if st.button("🚀 Procesar"):
             for _, r in df.iterrows():
-                l, s = ia.analizar(str(r["comentario"]))
+                label, score = ia.analizar(str(r["comentario"]))
                 # Validar fecha del CSV
-                f = r.get("fecha")
-                db.insertar_resena(r.get("producto", "Café"), r["comentario"], l, s, f)
-            st.success("Carga completada")
+                f_val = r.get("fecha")
+                f_final = f_val.strftime("%d/%m/%Y %H:%M") if pd.notna(f_val) else None
+
+                db.insertar_resena(r.get("producto", "Café"), r["comentario"], label, score, f_final)
+
+            fm.registrar_log(f"Carga masiva: {len(df)} registros procesados.")    
+            st.success(f"Carga completada: {len(df)} registros procesados.")
 
 # --- MÓDULO: BASE DE DATOS (NUEVO) ---
 elif menu == "Base de Datos":
-    st.header("💾 Gestión de Datos (Raw Data)")
+    st.header("💾 Gestión de Datos ")
     df_data = db.obtener_datos()
     if not df_data.empty:
         st.write(f"Total de registros: {len(df_data)}")
@@ -126,3 +139,17 @@ elif menu == "Dashboard Pro":
 
     else:
         st.info("Sin datos para graficar.")
+
+st.sidebar.divider()
+
+# --- BOTÓN DE LIMPIEZA DE DATOS ---
+if st.sidebar.button("🗑️ Limpiar Base de Datos"):
+    try:
+        db.limpiar_datos()
+        fm.registrar_log("Base de datos limpiada por el usuario.")
+        st.sidebar.success("¡Datos eliminados!")
+    
+        st.session_state.modulo_seleccionado = "Base de Datos"
+        st.rerun()
+    except Exception as e:
+        st.sidebar.error(f"Error al limpiar datos: {e}")
