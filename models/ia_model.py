@@ -17,3 +17,4 @@ class AnalizadorIA:
             return "NEUTRAL", 0.0
         resultado = self.model(texto)[0]
         return resultado["label"], resultado["score"]
+
