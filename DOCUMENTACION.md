@@ -1127,7 +1127,7 @@ Renderizado en interfaz Streamlit
 #### 1. Clonar o descargar el proyecto
 
 ```bash
-git clone <repositorio>
+git clone <https://github.com/JoseMartinez-AI/Proyecto_Starcuak.git>
 cd PROYECTO_STARCUAK
 ```
 
