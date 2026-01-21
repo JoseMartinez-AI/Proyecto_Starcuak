@@ -218,7 +218,6 @@ elif menu == "Dashboard Pro":
                 .size()
                 .unstack(fill_value=0)
             )
-            # Ordenamos para asegurar colores: Rojo, Amarillo, Verde
             cols = [c for c in ["NEG", "NEU", "POS"] if c in trend_pivot.columns]
             st.line_chart(
                 trend_pivot[cols],
